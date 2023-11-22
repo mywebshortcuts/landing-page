@@ -1,0 +1,90 @@
+/* Hero Section  */
+
+.hero-wrapper {
+	display: flex;
+	flex-direction: column;
+	padding-left: 2rem;
+	position: relative;
+}
+
+.taglineHeading {
+	font-size: 5.5rem;
+	color: var(--dark-grey);
+}
+.taglineHeading span {
+	color: var(--dark-green);
+}
+
+.installationLinks-wrapper {
+	margin-top: 3rem;
+	display: flex;
+	/* margin-left: .5rem; */
+}
+
+.installationLinks-wrapper > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: fit-content;
+
+	margin-inline: 1rem;
+}
+.browserLogo-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 3rem;
+	padding-right: 0.5rem;
+}
+.browserLogo-wrapper img {
+	width: 100%;
+}
+.chromeWebstoreLink.links {
+	background: linear-gradient(120deg, #db4437, #f4b400, #0f9d58);
+}
+.firefoxLink.links {
+	background: linear-gradient(120deg, #e67e22, #e74c3c, #2980b9);
+	
+	filter: grayscale(1);
+	position: relative;
+}
+.firefoxLink.links::after {
+	content: "*Support for Firefox coming soon";
+	color: var(--dark-grey);
+	position: absolute;
+	font-size: .7rem;
+	bottom: -35%;
+	right: 5%;
+	
+}
+.links {
+	display: flex;
+	align-items: center;
+	background-color: none;
+	/* color: var(--dark-green); */
+	color: var(--white);
+	transition: 0.1s ease;
+
+	border-radius: inherit;
+	padding: 0.8rem;
+	background-color: var(--dark-green);
+
+	font-size: 1.5rem;
+	border-radius: 1rem;
+
+	box-shadow: 0px 2px 5px 0px black;
+}
+.links:focus,
+.links:hover {
+	box-shadow: 0px 3px 10px 0px black;
+	outline: 2px solid var(--white);
+	transform: scale(1.1);
+	color: var(--white);
+}
+.links {
+}
+.linksSpan {
+	width: 100%;
+	font-weight: 500;
+	text-shadow: 0px 1px 1px black;
+}

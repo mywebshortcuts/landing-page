@@ -1,0 +1,25 @@
+.topArea{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding-left: 1rem;
+
+}
+
+
+
+
+
+/* Top Logo */
+.topLogoImg-wrapper {
+	width: 10%;
+
+	display: flex;
+
+	/* padding: 1rem; */
+	margin: 1rem;
+}
+.topLogoImg {
+	width: 100%;
+}
+
