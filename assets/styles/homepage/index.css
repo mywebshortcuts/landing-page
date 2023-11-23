@@ -11,6 +11,11 @@ body {
 
 }
 body .sections{
+	min-height: 100vh;
+	width: 100%;
+	color: var(--dark-grey);
+	display: flex;
+
 	/* margin-block: 2rem; */
 }
 
@@ -235,10 +240,10 @@ html.dark .switchMode span.darkOff{
 	position: absolute;
 	left: -10%;
 	margin: auto;
-	top: 60%;
+	bottom: 5rem;
 	width: 25rem;
 
-	z-index: -1;
+	z-index: 1;
 	user-select: none;
 
 	opacity: 0.7;

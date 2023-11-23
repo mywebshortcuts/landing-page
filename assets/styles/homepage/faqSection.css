@@ -1,0 +1,118 @@
+div.faqSection#faqs {
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+div.faqSection#faqs h2{
+    font-size: 2rem;
+
+    margin-bottom: 2rem;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.517);
+}
+
+
+
+.faqs-wrapper {
+	width: 50%;
+    border-radius: 1rem;
+}
+.detsAndSums-wrapper {
+    margin-block: .2rem;
+
+    /* box-shadow: 0px 0px 10px 0px black; */
+    border-radius: 1rem;
+}
+
+.questionAndAnswerDetails {
+    /* background-color: var(--white); */
+    /* padding: 1rem; */
+    border-radius: 1rem;
+    /* box-shadow: 0px 0px 2px 0px black;     */
+    transition: 0.2s ease;
+
+    line-height: 1.5rem;
+    user-select: none;
+    
+}
+.questionAndAnswerDetails:focus,
+.questionAndAnswerDetails[open],
+.questionAndAnswerDetails:hover {
+    transform: scale(1.02);
+}
+.questionAndAnswerDetails[open] {
+    user-select: auto;
+    transition: 0.2s ease;
+    margin-block: .6rem;
+}
+
+.questionAndAnswerDetails[open] summary ~ * {
+	animation: sweep 0.5s ease-in-out;
+}
+
+@keyframes sweep {
+	0% {
+		opacity: 0;
+		transform: translateY(-1rem);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.questionSummary {
+	background-color: var(--white);
+
+	padding: 1rem;
+	padding-block: 1.2rem;
+    
+	cursor: pointer;
+	display: block;
+	position: relative;
+
+    border-radius: .8rem;
+
+    font-weight: 500;
+    /* transition: 0.3s ease; */
+
+
+}
+.questionAndAnswerDetails:not([open]) .questionSummary:hover {
+    /* transform: scale(1.02); */
+}
+.questionSummary::after {
+	display: inline-block;
+	font-family: 'Font Awesome 6 Free';
+	content: "\f105";
+    font-weight: 900;
+	transition: 0.3s ease;
+	position: absolute;
+	right: 1rem;
+}
+.questionAndAnswerDetails[open] summary {
+    border-bottom: 2px solid var(--dark-grey);
+    border-bottom-right-radius: 0rem;
+    border-bottom-left-radius: 0rem;
+} 
+
+
+.questionAndAnswerDetails[open] > .questionSummary::after {
+	transform: rotate(90deg);
+}
+
+.answer-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+	padding: 1rem;
+    background-color: var(--white);
+
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+
+}
+.answerSpan {
+    width: 100%;
+    opacity: .7;
+}
