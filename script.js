@@ -58,3 +58,39 @@ switchModeButton.addEventListener('click', ()=>{
     }
 
 })
+
+
+
+
+// const subscribeDialogTemplate = (document.querySelector('.subscribeDialogTemplate')).content.cloneNode(true)
+// console.log(subscribeDialogTemplate);
+const subscribeDialog = document.querySelector('.subscribeDialog')
+// document.body.appendChild(subscribeDialog)
+subscribeDialog.style.display = 'none'
+console.log(subscribeDialog);
+
+
+const chromeInstallLink = document.querySelector('.chromeWebstoreLink')
+chromeInstallLink.addEventListener('click', (e)=>{
+    e.preventDefault()
+    subscribeDialog.showModal()
+    subscribeDialog.style.display = 'flex'
+})
+
+const closeSubscribeDialogButton = subscribeDialog.querySelector('.closeSubscribeDialogButton')
+console.log(closeSubscribeDialogButton);
+
+
+closeSubscribeDialogButton.addEventListener('click', (e)=>{
+    subscribeDialog.close()
+    subscribeDialog.style.display = 'none'
+})
+
+
+
+
+
+
+
+
+

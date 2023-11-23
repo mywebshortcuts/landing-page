@@ -416,8 +416,8 @@ dialog {
 	box-shadow: 0px 0px 10px 0px black;
 
 	position: fixed;
-	top: 50%;
-	bottom: 50%;
+	/* top: 50%; */
+	/* bottom: 50%; */
 	margin: auto;
 
 	font-size: 1rem;
@@ -428,6 +428,7 @@ dialog::backdrop {
 
 /* Most of the times the actionbutton inside a dialog will be the close dialog button, therefore this default style */
 dialog .actionButton{
+	color: #bfbfbf;
 	position: absolute;
 	top: 0rem;
 	right: 0rem;

@@ -41,6 +41,52 @@ body .sections{
 }
 
 
+dialog.subscribeDialog{
+	width: 60%;
+	height: 60%;
+	
+	display: flex;
+	flex-direction: row;	
+	padding: 0rem;
+
+	background-color: #262626;
+	color: #f0f0f0;
+}
+.leftSideDiv{
+	height: 100%;
+	width: 80%;
+	background-image: url(../../media/hand_typing_oilPainting.webp);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.rightSideDiv{
+	display: flex;
+	
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	height: 100%;
+	width: 100%;
+	padding: 2rem;
+}
+.rightSideDiv h2{
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+.rightSideDiv h2 span{
+	color: var(--dark-green);
+}
+
+iframe#prakashhTechSubtackIframe {
+	width: 100%;
+	height: 35%;
+    border-radius: 1rem;
+    border: none;
+}
+
+
 
 /* QUICK ACCESS */
 
