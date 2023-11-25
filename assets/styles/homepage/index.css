@@ -76,7 +76,6 @@ dialog.subscribeDialog{
 }
 .rightSideDiv h2{
 	text-align: center;
-	font-size: 1.5rem;
 	font-weight: 400;
 }
 .rightSideDiv h2 span{
@@ -142,6 +141,8 @@ iframe#prakashhTechSubtackIframe {
 /* starRepoLink */
 .starRepoButton{
 	display: none;
+	justify-content: center;
+	align-items: baseline;
 	position: fixed;
 	bottom: 1rem;
 	left: 2rem;
@@ -174,6 +175,7 @@ iframe#prakashhTechSubtackIframe {
 	color: #0f0f0f;
 }
 .starRepoButton i{
+	margin-inline: .2rem;
 	color: #e3b341;
 	transition: 0.2s ease;
 
