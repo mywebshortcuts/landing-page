@@ -140,7 +140,8 @@ iframe#prakashhTechSubtackIframe {
 
 
 /* starRepoLink */
-.starRepoLink{
+.starRepoButton{
+	display: none;
 	position: fixed;
 	bottom: 1rem;
 	left: 2rem;
@@ -149,24 +150,33 @@ iframe#prakashhTechSubtackIframe {
 
 	background-color: #0f0f0f;
 	border-radius: 1rem;
-	color: white;
+	color: #bfbfbf;
 
 	box-shadow: 0px 0px 10px 0px #0f0f0f;
 	transition: 0.2s ease;
-
-	border: 2px solid white;
-
+	
+	border: 2px solid #bfbfbf;
+	
 	font-weight: 500;
 	z-index: 2;
 }
-.starRepoLink:focus,
-.starRepoLink:hover
+.starRepoButton:focus,
+.starRepoButton:hover
 {
+	background-color: #e3b341;
 	transform: scale(1.1);
-	color: white;
+	color: #0f0f0f;
+	border-color: #0f0f0f;
 }
-.starRepoLink i{
-	color: yellow;
+.starRepoButton:focus i,
+.starRepoButton:hover i
+{
+	color: #0f0f0f;
+}
+.starRepoButton i{
+	color: #e3b341;
+	transition: 0.2s ease;
+
 }
 
 
@@ -271,18 +281,15 @@ html.dark .switchMode span.darkOff{
 /* Animated Logo */
 
 .animatedLogo-wrapper {
-	/* border: 2px solid black; */
 	position: absolute;
-	right: -10%;
-	/* bottom: 1rem; */
-	top: 200vh;
+	left: -10%;
 	margin: auto;
 	width: 25rem;
 
 	z-index: -1;
 	user-select: none;
 
-	opacity: 0.7;
+	opacity: 0.5;
 }
 
 .animatedLogo {
@@ -343,7 +350,45 @@ html.dark .switchMode span.darkOff{
 	right: 1rem;
 
 	border-radius: 100%;
+
+	box-shadow: 0px 0px 5px 0px black;
 }
 .scrollToTopButton:hover {
 	color: var(--white);
+}
+
+
+
+.bgCircle-wrapper{
+	display: flex;
+	
+	position: absolute;
+	/* left: -10%; */
+	/* top: 10rem; */
+	
+	
+	border-radius: 50%;
+	
+	z-index: -2;
+
+	padding: 10rem;
+	opacity: 0.8;
+}
+
+.topBgCircle{
+	padding: 15rem;
+	top: 45rem;
+	right: -25%;
+}
+.leftBgCircle{
+	top: 40rem;
+	left: -15%;
+}
+
+.bgCircle-wrapper.blue{
+	background-color: #26bcd6;
+}
+.bgCircle-wrapper.green{
+	background-color: #49a942;
+
 }

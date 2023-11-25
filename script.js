@@ -2,24 +2,28 @@
 
 
 
+const starRepoButton = document.querySelector('.starRepoButton')
+let quickAccess = document.querySelector('.quickAccess-wrapper');
+let scrollToTopButton = document.querySelector('.scrollToTopButton');
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    var quickAccess = document.querySelector('.quickAccess-wrapper');
-    var scrollToTopButton = document.querySelector('.scrollToTopButton');
 
-    // Show the scroll indicator after scrolling a certain distance
+    // Show scrollToTop, quickAccess & starRepoButton after scrolling a bit 
     window.addEventListener('scroll', function () {
         if (window.scrollY > 200) {
             quickAccess.style.display = 'flex';
-
             scrollToTopButton.style.display = 'flex';
+            starRepoButton.style.display = 'flex';
+
         } else {
             quickAccess.style.display = 'none';
             scrollToTopButton.style.display = 'none';
+            starRepoButton.style.display = 'none';
         }
     });
 
+    // Open & close quick access
     quickAccess.addEventListener('mouseenter', (e)=>{
         let quickAccessDetails = document.querySelector('.quickAccess-wrapper details');
         console.log(quickAccessDetails);
@@ -29,6 +33,8 @@ document.addEventListener('DOMContentLoaded', function () {
         let quickAccessDetails = document.querySelector('.quickAccess-wrapper details');
         quickAccessDetails.open = false
     })
+
+    // Show Quick Access despite of the scroll position if mouse enters that area
     document.addEventListener('mousemove', e=>{
         if (e.x >= 800 && e.y <= 80) {
             quickAccess.style.display = 'flex'
@@ -84,6 +90,10 @@ switchModeButton.addEventListener('click', ()=>{
         root.classList.add('dark')
     }
 
+})
+
+starRepoButton.addEventListener('click', ()=>{
+    window.open("https://github.com/mywebshortcuts/mywebshortcuts", "_blank")
 })
 
 
