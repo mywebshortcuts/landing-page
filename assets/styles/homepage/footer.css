@@ -1,38 +1,63 @@
-footer{
-    display: flex;
-    /* flex-direction: column; */
-    /* justify-content: center; */
-    justify-content: space-evenly;
-    align-items: center;
+footer {
+	display: flex;
+	/* flex-direction: column; */
+	/* justify-content: center; */
+	justify-content: center;
+	align-items: center;
 
-    color: var(--light-green);
-    
-    /* position: absolute;
+	/* color: var(--white); */
+	color: #f0f0f0;
+
+	/* position: absolute;
     bottom: 0px;
     left: 0px; */
 
-    position: relative;
-    width: 100%;
-    margin-top: 2rem;
-    background-color: #262626;
+	position: relative;
+	width: 100%;
+	margin-top: 2rem;
+	background-color: #262626;
 
-    font-size: 1rem;
-
-    min-height: 10rem;
+	font-size: 1rem;
+	padding: 2rem;
+	padding-bottom: 6rem;
+	/* min-height: 10rem; */
 }
 
-
-footer a{
-    color: var(--dark-blue);
+footer .footerLinks {
+    /* text-decoration: underline; */
+    display: flex;
+    align-items: baseline;
+    margin-inline: 2rem;
 }
-.dark footer{
+footer .footerLinks:hover {
+    opacity: 0.8;
+}
+footer .footerLinks i {
+	margin-inline: 0.2rem;
+}
+.dark footer {
     background-color: #141414;
 }
 
-.copyrightText{
+.creationText {
     position: absolute;
-
-    bottom: 1rem;
+	bottom: 3rem;
+}
+.prakharLink {
+    color: #ffce76;
+	text-decoration: none;
+}
+.copyrightText {
+    position: absolute;
+	font-size: 0.8rem;
+	bottom: 1rem;
 }
 
-
+.prakashhTechLink {
+    color: var(--dark-blue);
+	text-decoration: none;
+}
+.prakashhTechLink:focus,
+.prakashhTechLink:hover {
+    color: var(--dark-blue);
+}

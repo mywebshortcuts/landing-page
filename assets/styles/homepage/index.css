@@ -18,7 +18,7 @@ body .sections{
 	width: 100%;
 	color: var(--dark-grey);
 	display: flex;
-	margin-block: 10rem;
+	margin-block: 7rem;
 }
 
 .bgImage-wrapper {
@@ -141,6 +141,72 @@ iframe#prakashhTechSubtackIframe {
 
 
 
+.quickAccess-ul {
+	border-radius: 1rem;
+	background-color: var(--grey);
+	display: flex;
+	flex-direction: column;
+
+	list-style-type: none;
+	margin-top: 1rem;
+	/* padding: 1rem; */
+	margin: 0.5rem;
+	color: var(--dark-grey);
+
+}
+.quickAccess-li {
+	/* display: flex;
+	align-items: center;
+	padding: 0.5rem;
+	padding-block: 0.8rem; */
+	/* height: 3rem; */
+
+	/* border-radius: inherit; */
+	transition: 0.1s ease;
+}
+.quickAccess-li i {
+  padding-inline: .3rem;
+
+}
+.quickAccess-li:first-child {
+	border-top-left-radius: inherit;
+	border-top-right-radius: inherit;
+}
+.quickAccess-li:last-child {
+	border-bottom-left-radius: inherit;
+	border-bottom-right-radius: inherit;
+}
+.quickAccess-li:hover {
+	background-color: var(--dark-grey);
+	color: var(--white);
+}
+.quickAccess-li a {
+	display: flex;
+	align-items: center;
+	padding: 0.5rem;
+	padding-block: 0.8rem;
+	/* color: var(--dark-grey); */
+	color: inherit;
+}
+.quickAccess-li a i{
+	width: 2rem;
+}
+.quickAccess-li a:hover {
+	/* color: var(--white); */
+	color: inherit;
+}
+
+
+.quickAccess-li .sponsorLink{
+	color: hsl(350, 100%, 65%);
+}
+.quickAccess-li a.sponsorLink:focus,
+.quickAccess-li a.sponsorLink:hover{
+	background-color: hsl(350, 100%, 65%);
+}
+
+
+
 /* starRepoLink */
 .starRepoButton{
 	display: none;
@@ -224,62 +290,6 @@ html.dark .switchMode span.darkOff{
 	display: none;
 }
 
-
-
-.quickAccess-ul {
-	border-radius: 1rem;
-	background-color: var(--grey);
-	display: flex;
-	flex-direction: column;
-
-	list-style-type: none;
-	margin-top: 1rem;
-	/* padding: 1rem; */
-	margin: 0.5rem;
-	color: var(--dark-grey);
-
-}
-.quickAccess-li {
-	/* display: flex;
-	align-items: center;
-	padding: 0.5rem;
-	padding-block: 0.8rem; */
-	/* height: 3rem; */
-
-	/* border-radius: inherit; */
-	transition: 0.1s ease;
-}
-.quickAccess-li i {
-  padding-inline: .3rem;
-
-}
-.quickAccess-li:first-child {
-	border-top-left-radius: inherit;
-	border-top-right-radius: inherit;
-}
-.quickAccess-li:last-child {
-	border-bottom-left-radius: inherit;
-	border-bottom-right-radius: inherit;
-}
-.quickAccess-li:hover {
-	background-color: var(--dark-grey);
-	color: var(--white);
-}
-.quickAccess-li a {
-	display: flex;
-	align-items: center;
-	padding: 0.5rem;
-	padding-block: 0.8rem;
-	/* color: var(--dark-grey); */
-	color: inherit;
-}
-.quickAccess-li a i{
-	width: 2rem;
-}
-.quickAccess-li a:hover {
-	/* color: var(--white); */
-	color: inherit;
-}
 
 
 
