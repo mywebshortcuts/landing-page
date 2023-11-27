@@ -1,6 +1,9 @@
 
 
 .sponsorSection{
+  --bg-color: hsl(350, 100%, 65%);
+
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,16 +11,22 @@
 
     width: 100%;
 
-    margin-block: 7rem;
+    padding-block: 2rem;
 
+    
     color: var(--dark-grey);
-}
+
+
+  }
 
 
 
 .sponsorSection h2{
-    color: rgb(255, 80, 109);
+    color: var(--bg-color);
     font-size: 2.5rem;
+
+
+    
 }
 
 .sponsorSection h2 span{
@@ -35,7 +44,6 @@
 
 .sponsorSection .sponsorLink {
     /* margin-top: 2rem; */
-	--bg-color: hsl(350, 100%, 65%);
 	color: white;
 	animation: shine 2s infinite linear;
 	background-color: var(--bg-color);

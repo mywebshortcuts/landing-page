@@ -67,9 +67,10 @@
 .productHuntLink.links{
 	
 	--phColor: #da552f;
+	height: 100%;
 	/* justify-self: center; */
-	border-radius: 1rem;
-	/* padding: .2rem; */
+	/* border-radius: 1rem; */
+	/* padding: .5rem; */
 	padding: 0rem;
 	border: .2rem solid var(--phColor);
 	background-color: #fff;
