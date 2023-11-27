@@ -1,7 +1,11 @@
 footer{
     display: flex;
-    justify-content: center;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    justify-content: space-evenly;
     align-items: center;
+
+    color: var(--light-green);
     
     /* position: absolute;
     bottom: 0px;
@@ -12,13 +16,23 @@ footer{
     margin-top: 2rem;
     background-color: #262626;
 
-    font-size: .8rem;
+    font-size: 1rem;
 
     min-height: 10rem;
 }
 
+
+footer a{
+    color: var(--dark-blue);
+}
 .dark footer{
     background-color: #141414;
+}
+
+.copyrightText{
+    position: absolute;
+
+    bottom: 1rem;
 }
 
 

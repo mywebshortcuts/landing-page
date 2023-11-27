@@ -1,0 +1,74 @@
+
+
+.sponsorSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    /* margin-top: 5rem; */
+
+    color: var(--dark-grey);
+}
+
+
+
+.sponsorSection h2{
+    color: rgb(255, 80, 109);
+    font-size: 2.5rem;
+}
+
+.sponsorSection h2 span{
+    color: var(--dark-green);
+}
+
+
+.sponsorRequestSpan{
+    font-weight: 500;
+    margin-block: 1rem;
+    font-size: 1.3rem;
+}
+
+.sponsorSection .sponsorLink {
+    /* margin-top: 2rem; */
+	--bg-color: hsl(350, 100%, 65%);
+	color: white;
+	animation: shine 2s infinite linear;
+	background-color: var(--bg-color);
+	box-shadow: 0rem 0rem .8rem 0rem var(--bg-color);
+
+  transition: transform .2s ease; 
+}
+.sponsorSection .sponsorLink i{
+    margin-inline: .5rem;
+}
+.sponsorSection .sponsorLink:hover,
+.sponsorSection .sponsorLink:focus {
+	transform: rotate(-2.5deg) scale(1.1);
+	animation: seeSaw 1s infinite ease-in-out;
+	animation-delay: .2s;
+}
+@keyframes seeSaw {
+  0%, 100% {
+    transform: rotate(-2.5deg) scale(1.1);
+  }
+  50% {
+    transform: rotate(2.5deg) scale(1.1);
+  }
+}
+@keyframes shine {
+	0% {
+		/* box-shadow: 0rem 0rem 0.2rem 0rem var(--bg-color); */
+		/* background-color: var(--bg-color); */
+	}
+	50% {
+		box-shadow: 0rem 0rem 0.2rem 0rem hsl(350, 100%, 60%);
+		background-color: hsl(350, 100%, 60%);
+	}
+	100% {
+		/* box-shadow: 0rem 0rem 0.2rem 0rem var(--bg-color); */
+		/* background-color: var(--bg-color); */
+	}
+}
