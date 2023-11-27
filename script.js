@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const chromeInstallLink = document.querySelector('.chromeWebstoreLink')
     chromeInstallLink.addEventListener('click', (e) => {
-        e.preventDefault()
+        // e.preventDefault()
         subscribeDialog.showModal()
         subscribeDialog.style.display = 'flex'
     })
@@ -69,6 +69,12 @@ document.addEventListener('DOMContentLoaded', function () {
     const closeSubscribeDialogButton = subscribeDialog.querySelector('.closeSubscribeDialogButton')
     console.log(closeSubscribeDialogButton);
 
+    window.addEventListener('keydown', e=>{
+        if (e.key == "Escape" && subscribeDialog.style.display=='flex') {
+            subscribeDialog.close()
+            subscribeDialog.style.display = 'none'
+        }
+    })
 
     closeSubscribeDialogButton.addEventListener('click', (e) => {
         subscribeDialog.close()
@@ -81,13 +87,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 const switchModeButton = document.querySelector('.switchMode')
+const productHuntLinkImg = document.querySelector('.productHuntLink img')
 switchModeButton.addEventListener('click', ()=>{
     const root = document.querySelector('html')
     if (root.classList.contains('dark')) {
         root.classList.remove('dark')
+        productHuntLinkImg.src = (productHuntLinkImg.src).replace("theme=dark", "theme=light")
     }
     else{
         root.classList.add('dark')
+        productHuntLinkImg.src = (productHuntLinkImg.src).replace("theme=light", "theme=dark")
     }
 
 })

@@ -2,23 +2,44 @@
 
 
 
-.aboutSection{
+.aboutSection.sections{
     display: flex;
     justify-content: center;
+    /* align-items: center; */
 
-    width: 100%;
+    /* width: 100%; */
+    width: 80%;
     /* min-height: 50rem; */
 
     /* border: 2px solid black; */
     /* margin-top: 10%; */
 }
+.aboutSection.sections > div{
+    margin-inline: 1rem;
+}
 
+
+.iframe-wrapper{
+    display: flex;
+    width: 100%;
+}
 .youtubeVideoIframe{
     border-radius: 2rem;
     box-shadow: 0px 2px 5px 0px black;
     transition: 0.2s ease;
+    width: 100%;
+    height: 315px;
 }
 .youtubeVideoIframe:hover{
     transform: scale(1.01);
     /* box-shadow: 0px 5px 5px 0px black; */
+}
+
+.aboutText-wrapper{
+    display: flex;
+    width: 75%;
+}
+.aboutTextSpan{
+    font-size: 1.2rem;
+    /* text-align: center; */
 }
