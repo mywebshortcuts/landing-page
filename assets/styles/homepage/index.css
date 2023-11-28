@@ -1,4 +1,10 @@
-/* Below 600px*/
+/* Below 400px*/
+@media only screen and (max-width: 400px) {
+	:root{
+
+	}
+}
+/* Below 900px*/
 @media only screen and (max-width: 900px) {
 	/* Top Area */
 	.topArea div.topLogoImg-wrapper {
