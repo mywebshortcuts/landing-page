@@ -1,9 +1,4 @@
-/* Below 400px*/
-@media only screen and (max-width: 400px) {
-	:root{
 
-	}
-}
 /* Below 900px*/
 @media only screen and (max-width: 900px) {
 	/* Top Area */
@@ -100,7 +95,8 @@
 /* 1920x1080 */
 @media only screen and (min-width: 1920px) {
 	:root{
-		font-size: 22px;
+		/* font-size: 22px; */
+		font-size: 34px;
 	}
 }
 
@@ -233,6 +229,7 @@ iframe#prakashhTechSubtackIframe {
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
+	font-size: 1rem;
 }
 .quickAccess-summary {
 	display: flex;
@@ -340,6 +337,7 @@ iframe#prakashhTechSubtackIframe {
 	border: 2px solid #bfbfbf;
 	
 	font-weight: 500;
+	font-size: 1rem;
 	z-index: 2;
 }
 .starRepoButton:focus,
