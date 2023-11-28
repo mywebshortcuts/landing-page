@@ -1,19 +1,40 @@
 /* Below 600px*/
 @media only screen and (max-width: 900px) {
 	/* Top Area */
-	.topArea .topLogoImg-wrapper {
-		width: 50%;
+	.topArea div.topLogoImg-wrapper {
+		/* margin: auto; */
+		/* justify-self: center; */
+		width: 40%;
 	}
 
+	/* Hero Section */
+	h1.taglineHeading {
+		font-size: 4rem;
+		/* text-align: center; */
+	}
+	div.installationLinks-wrapper {
+		flex-direction: column;
+	}
+	div.installationLinks-wrapper a {
+		width: 100%;
+		margin-block: 1rem;
+	}
+	
+
+	/* Sponsor Section */
+	span.sponsorRequestSpan{
+		width: 100%;
+	}
 	/* FAQs Section */
 
 	.faqSection .faqs-wrapper{
 		width: 90%;
 	}
 
-footer div.subscribeNewsletter-wrapper{
-	width: 100%;
-}
+	/* Footer */
+	footer div.subscribeNewsletter-wrapper{
+		width: 100%;
+	}
 }
 
 
@@ -30,7 +51,7 @@ footer div.subscribeNewsletter-wrapper{
 
 	/* Top Area */
 	.topArea .topLogoImg-wrapper {
-		width: 20%;
+		/* width: 20%; */
 	}
 
 
@@ -65,6 +86,9 @@ footer div.subscribeNewsletter-wrapper{
 		flex-direction: row;
 	}
 
+	footer div.subscribeNewsletter-wrapper{
+		width: 100%;
+	}
 }
 
 /* 1920x1080 */
