@@ -95,11 +95,16 @@
 /* 1920x1080 */
 @media only screen and (min-width: 1920px) {
 	:root{
-		/* font-size: 22px; */
-		font-size: 34px;
+		font-size: 22px;
 	}
 }
-
+/* 1920x1080 */
+@media only screen and (min-width: 2560px) {
+	:root{
+		/* font-size: 22px; */
+		font-size: 44px;
+	}
+}
 
 
 body {
@@ -364,9 +369,13 @@ iframe#prakashhTechSubtackIframe {
 
 
 button.switchMode{
+	position: absolute;
+	top: 1rem;
+
+
 	align-self: center;
 	justify-self: center;
-	width: 90%;
+	width: fit-content;
 	margin: auto;
 	background-color: transparent;
 	color: #262626;
@@ -382,7 +391,6 @@ button.switchMode{
 	color: #f0f0f0;
 	align-self: center;
 	justify-self: center;
-	width: 90%;
 	margin: auto;
 }
 .dark .switchMode:hover{
