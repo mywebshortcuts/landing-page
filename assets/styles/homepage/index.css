@@ -1,3 +1,72 @@
+/* Below 600px*/
+@media only screen and (max-width: 900px) {
+	/* Top Area */
+	.topArea .topLogoImg-wrapper {
+		width: 50%;
+	}
+
+	/* FAQs Section */
+
+	.faqSection .faqs-wrapper{
+		width: 90%;
+	}
+
+footer div.subscribeNewsletter-wrapper{
+	width: 100%;
+}
+}
+
+
+/* Below 1300px*/
+@media only screen and (max-width: 1300px) {
+	:root{
+		font-size: 20px;
+	}
+
+	/* Background elements */
+	.bgImage-wrapper{
+		display: none;
+	}
+
+	/* Top Area */
+	.topArea .topLogoImg-wrapper {
+		width: 20%;
+	}
+
+
+	/* About Section */
+	.aboutSection{
+    flex-wrap: wrap;
+	}
+	.aboutSection .aboutText-wrapper {
+		width: 100%;
+		margin-top: 2rem;
+	}
+
+
+	/* Review Section */
+	.reviewSection .image-container{
+		width: 80%;
+	} 
+
+	/* FOOTER */
+	footer{
+		flex-direction: column;
+	}
+	footer div.footerLinks-wrapper{
+		justify-content: center;
+		align-items: center;
+		flex-wrap: nowrap;
+		width: 100%;
+		/* flex: 1; */
+		flex-direction: row;
+	}
+	footer .footerLinks-wrapper > div{
+		flex-direction: row;
+	}
+
+}
+
 /* 1920x1080 */
 @media only screen and (min-width: 1920px) {
 	:root{
@@ -176,15 +245,19 @@ iframe#prakashhTechSubtackIframe {
   padding-inline: .3rem;
 
 }
-.quickAccess-li:first-child {
+.quickAccess-li:first-child,
+.quickAccess-li:first-child a
+ {
 	border-top-left-radius: inherit;
 	border-top-right-radius: inherit;
 }
-.quickAccess-li:last-child {
+.quickAccess-li:last-child,
+.quickAccess-li:last-child a {
 	border-bottom-left-radius: inherit;
 	border-bottom-right-radius: inherit;
 }
-.quickAccess-li:hover {
+.quickAccess-li:not(.sponsorLinkListItem) a:focus,
+.quickAccess-li:not(.sponsorLinkListItem):hover {
 	background-color: var(--dark-grey);
 	color: var(--white);
 }
@@ -199,8 +272,9 @@ iframe#prakashhTechSubtackIframe {
 .quickAccess-li a i{
 	width: 2rem;
 }
+.quickAccess-li a:focus,
 .quickAccess-li a:hover {
-	/* color: var(--white); */
+	background-color: inherit;
 	color: inherit;
 }
 

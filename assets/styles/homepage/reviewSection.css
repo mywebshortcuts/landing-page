@@ -53,8 +53,12 @@
     width: 100%;
     height: auto;
     display: block;
-}
 
+
+}
+.dark .image-container img {
+	filter: invert(100%);
+}
 .image-container img:hover {
 	cursor: pointer;
 	transform: scale(1.05);
