@@ -59,7 +59,8 @@ footer .subscribeNewsletter-wrapper{
 
 	border-radius: 1rem;
 }
-footer .subscribeNewsletter-wrapper span{
+footer .subscribeNewsletter-wrapper a{
+	color: #bfbfbf;
 	padding: 1rem;
 }
 footer .subscribeNewsletter-wrapper iframe{
