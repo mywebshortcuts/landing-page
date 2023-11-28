@@ -1,0 +1,53 @@
+
+
+.communitySection{
+  --bg-color: #5865F2;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    padding-block: 5rem;
+
+    
+    color: var(--dark-grey);
+
+
+  }
+
+
+
+.communitySection h2{
+    /* color: var(--bg-color); */
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.communitySection h2 span{
+    color: var(--dark-blue);
+}
+
+
+.joinCommunitySpan{
+    font-weight: 500;
+    margin-block: 1rem;
+    font-size: 1.3rem;
+    width: 60%;
+    text-align: center;
+}
+
+.communitySection .discordLink {
+    /* margin-top: 2rem; */
+	color: white;
+	background-color: var(--bg-color);
+	box-shadow: 0rem 0rem .8rem 0rem var(--bg-color);
+
+  transition: transform .2s ease; 
+}
+.communitySection .discordLink i{
+    margin-inline: .5rem;
+}
